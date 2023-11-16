@@ -196,7 +196,7 @@ footer {
 .footer-div {
     display: flex;
     flex-direction: column;
-    margin-top: 80px;
+    margin-top: 10px;
 }
 
 .footer-icon i:hover {
@@ -404,12 +404,10 @@ h4 {
 
     .section-1 section {
         width: 100%;
-        min-height: 950px;
     }
 
     .section-2 section {
         width: 100%;
-        min-height: 950px;
     }
 
     .producto {
@@ -420,7 +418,7 @@ h4 {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        margin-top: 80px;
+        margin-top: 10px;
     }
 
     .register-text {
@@ -515,15 +513,16 @@ h4 {
         font-size: 16px;
     }
 
+    .section-1, .section-2 {
+        min-height: 80vh;
+    }
 
     .section-1 section {
         padding: 0 20px;
-        min-height: 700px;
     }
 
     .section-2 section {
         padding: 0 20px;
-        min-height: 700px;
     }
 
     .productos {
@@ -539,7 +538,7 @@ h4 {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        margin-top: 80px;
+        margin-top: 10px;
     }
 
     .footer-section {
