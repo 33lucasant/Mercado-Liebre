@@ -197,11 +197,14 @@ footer {
     display: flex;
     flex-direction: column;
     margin-top: 80px;
-    transition: color 450ms;
 }
 
-.footer-icon:hover {
+.footer-icon:hover i {
     color: #0022AA;
+}
+
+.footer-icon i {
+    transition: color 450ms;
 }
 
 h5, .footer-icon {
