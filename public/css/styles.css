@@ -30,7 +30,7 @@ body {
     color: #666666;
     padding: 10px;
     width: 250px;
-    flex-wrap: wrap;
+    display: flex;
 }
 
 .barrabusq {
@@ -39,8 +39,9 @@ body {
 }
 
 .boton {
-    padding-left: 10px;
-    border-left: 1px solid #ebebeb;
+    background-color: white;
+    border: none;
+    padding-left: 20px;
 }
 
 .copy-header {
@@ -146,7 +147,7 @@ body {
 
 
 .producto img {
-    width: 380px;
+    width: 100%;
     display: block;
     margin: auto;
 }
@@ -188,10 +189,13 @@ body {
     transition: display 450ms;
 }
 
+footer {
+    margin-bottom: 10px;
+}
+
 .footer-div {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     margin-top: 80px;
     transition: color 450ms;
 }
@@ -206,7 +210,7 @@ h5, .footer-icon {
 
 .footer-icon {
     margin-top: 20px;
-    font-size: 40px;
+    font-size: 2em;
     color: #03264C;
 }
 
@@ -224,6 +228,7 @@ h5 {
 
 .copyright {
     display: flex;
+    justify-content: center;
 }
 
 .copyright h6 {
@@ -296,11 +301,11 @@ h4 {
 }
 
 .checkbox-button {
-    margin-top: 30px;
-    margin-bottom: 30px;
     display: flex;
-    justify-content: space-around;
-    padding: 0 20px;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 30px;
+    width: 250px;
 }
 
 .foto-perfil {
@@ -344,10 +349,6 @@ h4 {
         align-items: center;
     }
 
-    .logo {
-        width: 160px;
-    }
-
     .barra {
         background-color: white;
         border: solid 1px #ebebeb;
@@ -359,11 +360,6 @@ h4 {
     .barrabusq {
         border: none;
         width: 245px;
-    }
-
-    .boton {
-        padding-left: 10px;
-        border-left: 1px solid #ebebeb;
     }
 
     .copy-header {
@@ -414,11 +410,7 @@ h4 {
     }
 
     .producto {
-        width: 300px;
-    }
-
-    .producto img {
-        width: 280px;
+        width: 45%;
     }
 
     .footer-div {
@@ -438,10 +430,6 @@ h4 {
 
     h4 {
         padding: 0 250px;
-    }
-
-    .checkbox-button {
-        padding: 0 40px;
     }
 
     .foto-perfil {
@@ -483,6 +471,10 @@ h4 {
         align-items: center;
     }
 
+    .logo {
+        width: 250px;
+    }
+
     .barra {
         background-color: white;
         border: solid 1px #ebebeb;
@@ -496,12 +488,11 @@ h4 {
         border: none;
         width: 445px;
     }
-
-    .boton {
-        padding-left: 10px;
-        border-left: 1px solid #ebebeb;
-    }
     
+    .boton {
+        padding-left: 15px;
+    }
+
     .copy-header {
         max-width: none;
         font-size: 18px;
@@ -535,34 +526,21 @@ h4 {
     .productos {
         width: 100%;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
     }
 
     .producto {
-        width: 400px;
-        flex-wrap: wrap;
-    }
-
-    .producto img {
-        width: 380px;
+        width: 23%;
     }
 
     .footer-div {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: row;
         justify-content: space-around;
         margin-top: 80px;
     }
 
     .footer-section {
-        width: 500px;
-    }
-
-    .footer-icon {
-        left: 230px;
-        position: relative;
-        width: 50px;
+        width: 400px;
     }
 
     .radio-button {
@@ -574,10 +552,8 @@ h4 {
     }
 
     .checkbox-button {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
         padding-right: 360px;
+        width: auto;
     }
 
     .foto-perfil {
@@ -599,12 +575,10 @@ h4 {
     }
 
     .error {
-        padding-right: 45%;
         font-size: 12px;
     }
 
     .error-register {
-        padding-right: 21%;
         font-size: 12px;
     }
 }

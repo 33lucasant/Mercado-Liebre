@@ -13,10 +13,10 @@
     <header class="main-header">
         <div class="main-header-top-bar">
             <a href="/"><img src="/img/logo-mercado-liebre.svg" class="logo"></a>
-            <div class="barra">
+            <form action="/" method="POST" class="barra">
                 <input type="search" class="barrabusq" placeholder="Buscar productos, marcas y más">
-                <span class="boton"><i class="fas fa-search"></i></span>
-            </div>
+                <button class="boton"><i class="fas fa-search"></i></button>
+            </form>
             <h2 class="copy-header">
                 <i class="fas fa-hand-holding-usd"></i>
                 Comprá en cuotas y sin tarjeta de crédito
@@ -51,11 +51,12 @@
                 <input type="text" name="usuario" placeholder="Nombre de usuario" class="register-text" required>
                 <span class="error-register">Usuario incorrecto</span>
                 <input type="email" name="email" placeholder="E-mail" class="register-text" required>
-                <span class="error-register">Email incorrecto</span>
+                <span class="error-register">E-mail incorrecto</span>
 
                 <h4>Fecha de Nacimiento</h4>
                 <input type="date" name="fecha-de-nacimiento" class="register-text">
-                <input type="text" name="domiclio" placeholder="Domicilio" class="register-text">
+                <input type="text" name="domiclio" placeholder="Domicilio" class="register-text" required>
+                <span class="error-register">Domicilio incorrecto</span>
 
                 <h4>Perfil de Usuario</h4>
                 <div class="radio-button">
@@ -94,9 +95,12 @@
                 <h4>Ingrese su foto de perfil</h4>
                 <input type="file" name="avatar" class="foto-perfil">
                 
-                <input type="password" name="contraseña" placeholder="Contraseña" class="register-text">
-                <input type="password" name="contraseña" placeholder="Confirmar contraseña" class="register-text">
-                
+                <input type="password" name="contraseña" placeholder="Contraseña" class="register-text" minlength="8" required>
+                <span class="error-register">La contraseña debe tener min. 8 caracteres</span>
+                <input type="password" name="contraseña" placeholder="Confirmar contraseña" class="register-text" minlength="8" required>
+                <span class="error-register">La contraseña debe tener min. 8 caracteres</span>
+                <br>
+                <br>
                 <button type="submit" class="submit">Enviar</button>
                 <br>
                 <button type="reset" class="reset">Resetar</button>
